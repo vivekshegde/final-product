@@ -1,0 +1,18 @@
+<h1>EDIT BASE_FORMATION_LOGIC_TBL </h1>
+
+<div class="perfect-forms">
+
+	<%= form_for(@base_form_logic) do |f| %>
+
+		<div class="form-row">
+		  <%= f.label :BASE_FORMATION_LOGIC %>
+		  <%= f.text_field :BASE_FORMATION_LOGIC, class: 'form-control' %>
+		</div>
+		
+		<div class="form-row">
+		  <%= f.submit 'Update', class: "btn btn-primary" %>
+		</div>
+
+	<% end %>
+
+</div>

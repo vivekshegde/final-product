@@ -1,0 +1,22 @@
+<h1>EDIT CONFIRMER_TBL </h1>
+
+<div class="perfect-forms">
+
+<%= form_for(@confs) do |f| %>
+
+	<div class="form-row">
+	  <%= f.label :POSITION %>
+	  <%= f.text_field :POSITION, class: 'form-control' %>
+	</div>
+
+	<div class="form-row">
+	  <%= f.label :NAME %>
+	  <%= f.text_field :NAME, class: 'form-control' %>
+	</div>
+
+	<div class="form-row">
+	  <%= f.submit 'Update', class: "btn btn-primary" %>
+	</div>
+
+<% end %>
+</div>

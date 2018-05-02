@@ -1,0 +1,9 @@
+<h1>ALL SUBSYSTEM_TBLS </h1>
+
+<% @subs.each do |f| %>
+	<div class="theShower text-center">
+		<div><%=f.SUBSYSTEM_NAME%><%= link_to "x", f , method: :delete, data: { confirm: "You sure?" } %></div>
+	</div>
+<% end %>
+
+<%= link_to 'New', new_subsystem_tbl_path %>
